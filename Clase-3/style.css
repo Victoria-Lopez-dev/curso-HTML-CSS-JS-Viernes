@@ -1,0 +1,78 @@
+section{
+    background-color: cadetblue;
+    padding: 30px;
+    margin-bottom: 30px;
+
+}
+div{
+    border: 2px solid darkslateblue;
+    background-color: cornflowerblue;
+    /* width: 300px; */
+    height: fit-content;
+}
+
+/*-------------- flexbox -------------- */
+.padre-flexbox{
+    background-color: chocolate;
+    display: flex;
+    flex-direction: row;
+   justify-content: flex-start;/*(row) sentido horizontal*/
+    align-items: center;/*(row)* sentido vertical */
+    flex-wrap:wrap ;/* nowrap -> prioriza la ubicacion de los elemntos | wrap ->priorizar el tamaño de sus hijos */
+   ;/*  flex-flow:row wrap flex-flow: flex-direction flex-wrap */
+    /* place-content: aling-content justyfy-content ; 
+    place-items aling-items justify-items ;*/
+   gap: 20px;
+  
+}
+.hijo1{
+    
+    background-color: aquamarine;
+    flex-grow: 2;/* valores numericos sin unidad */
+     /* order -> propiedad ordenar a los elementos hijo  */
+    /* place-self: aling-self justyfy-self ; */
+}
+.hijo4{
+    flex-shrink: 2;
+}
+
+/* flex-direction
+justify-content/ align-items -> dependiendo la direccion c/u ubica a los elementos hijos de manera  horizontal y vertical 
+*/
+
+/*-------------- grid -------------- */
+
+.padre-grid{
+    row-gap: 20px;
+    column-gap: 40px;
+    display: grid;
+    /* grid-template-columns:1fr 2fr 3fr;
+    grid-template-rows: 300px 500px; */
+    grid-template-areas:'hijoA hijoA hijoB'
+                        'hijoC hijoC hijoD' ;
+    
+   
+}
+.hijoA{
+    /* grid-row:1/3 ; */
+    grid-area: hijoA;
+     height: 300px;
+}
+.hijoB{
+    /* grid-column: 2/3;
+    grid-row: 1/3; */
+    grid-area: hijoB;
+}
+.hijoC{
+    grid-area: hijoC;
+}
+.hijoD{
+    grid-area: hijoD;
+}
+/* fr - fraccion 
+    area
+
+
+*/
+
+/* shift+command+.*/

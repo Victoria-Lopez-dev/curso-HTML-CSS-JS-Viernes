@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase -2 </title>
+</head>
+<body>
+    <style>
+        body{
+            background-color: darkgoldenrod;
+        }
+        section{
+            margin: 40px;
+            padding: 20px;
+            background-color: dodgerblue;
+            width: fit-content;
+            position: relative;
+        }
+        video{
+            width: 500px;
+        }
+        span{
+            font-weight: bolder;
+        }
+        .seccion>h2{
+            position: absolute;
+            top: 20%;
+            left: 40%;
+            background-color: white;
+        }
+        iframe{
+            width: 500px;
+            height: 400px;
+        }
+        @media (max-width:500px) {
+            video{
+                width: 100%;
+                height: 400px;
+                background-color: red;
+            }
+            iframe{
+                width: 100%;
+            }
+        }
+
+    </style>
+    <h1>Clase 2 -audio y video</h1>
+    <p id="parrafo1">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+    <button onclick="cambiarFondo()">Click</button>
+
+
+    <section class="seccion">   
+        <video controls poster="./assets/about.png" autoplay>
+            <source src="./assets/videos/video2.mp4" type="video/mp4"/>
+            <source src="./assets/videos/video2.ogv" type="video/ogv"/>
+        </video>
+    </section>
+
+
+    <section class="seccion">   
+        <h2>TITULO</h2>
+        <video poster="./assets/globos.jpg" loop>
+            <source src="./assets/videos/video2.mp4" type="video/mp4"/>
+            <source src="./assets/videos/video2.ogv" type="video/ogv"/>
+        </video>
+        <div>
+            <button onclick="mostrar()">click</button>
+            <p>duracion: 
+                <span id="duracion"></span>
+            tiempo actual:
+            <span id="actual"></span>
+            </p>
+
+            <button onclick="reproducir()">PLAY</button>
+            <button onclick="pausar()">PAUSE</button>
+        </div>
+    </section>  
+    
+    <!-- iframe -->
+    <iframe  src="https://www.youtube.com/embed/c1xpVeaOBpo?si=3_SW2k_AMvS_tTBj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <script src="./script.js"></script> 
+</body>
+</html>
+
+<!-- video - audio -> atributo 
+ png-jpg-svg -> imagen
+
+ mp4-ogv -> video
+ mp3 - ogg -> audio  
+
+ atributos de audio-video
+
+ controls -> controles predeterminados del browser para audio/video
+ poster -> imagen inicial 
+ loop -> se reproduzca constantemente
+    autoplay -> reproduccion automatica ( poster  no se llega a  ver/apreciar )
+-->
+
+<!-- proxima clase flex-grid  git y github -->

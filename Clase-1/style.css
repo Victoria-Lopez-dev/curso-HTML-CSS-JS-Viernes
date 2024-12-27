@@ -1,0 +1,72 @@
+/*comentarios */
+/* selectores -> hacer referencia a elementos*/
+/* sintaxis: 
+selector {
+propiedades:valor,
+propiedades:valor,
+propiedades:valor
+}
+*/
+/* etiqueta(etiqueta) - id(#id) - class(.clase)*/
+/* html{
+    font-size: 13px;
+} */
+
+h3{
+    color: rgb(44, 33, 100);
+
+}
+h1{
+    font-size:50px;
+}
+h2{
+    font-size: 2rem;/*2*16 */
+}
+#tarjeta1{
+    background-color: #F9006655;
+}
+.tarjeta{
+    border: 5px solid violet;
+    background-color: rgba(200,100,55,0.8);
+    width: 400px;
+    font-size: 10px;
+}
+
+/*compuestos -> padre>hijo ; + ~(elementos hermanos) */
+
+ul>li{
+    color: green;
+}
+#texto1{
+    color: darkblue;
+}
+.tarjeta>p{
+    color: brown;
+    background-color: cornflowerblue;
+    width: 50%;
+    font-size:2em ;/* 2 * 10 (valor del padre)*/
+}
+p+button{
+    background-color: coral;
+}
+img{
+    width: 50vw;
+}
+
+/* jerarquia -> id > clase>etiqueta */
+
+/* colores -> primarios luminosos Rojo Verde Azul 
+
+hexadecimal-> 6 digitos+ # 0-9 A-F (cada par representa a una cantidad de color primario)
+rgb-rgba -> rgb(,,) 0-255
+a-> transparencia (0-1)
+
+unidades: px(unidad fija )
+%(porcentaje) vh- vw (view height- alto de la ventana del navegador - view width- ancho de la ventana del navegador ) 
+
+rem(root element) -> fija cuanto mide la font-size del html(por defecto 16px)
+-em -> fija el tamaño tipografico del padre 
+
+-> width
+
+*/
