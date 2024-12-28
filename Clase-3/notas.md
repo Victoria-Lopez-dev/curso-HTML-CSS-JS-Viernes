@@ -23,3 +23,15 @@ git config --global user.email email@email.com
 la primera vez que usamos git tambien nos va a tirar un cartelito para autorizara nuestro equpo a cargar desde este  a nuestro usuario de github
 
 ## actualizar un proyecto ya cargado en un repositorio remoto
+
+- init
+- add .
+- commit -m "mensaje"
+- push -u origin main
+
+
+## Proxima clase
+- como me puedo descargar un repositorio?
+- como invitar a otro usuario a un repo privado?
+- ramas/branches ?
+- animacion 3D
