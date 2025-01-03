@@ -1,0 +1,15 @@
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    font-size: 40px;
+    color: white;
+
+}
+.cubo{
+    background-color: brown;
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+}
