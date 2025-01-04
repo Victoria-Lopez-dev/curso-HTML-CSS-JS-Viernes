@@ -5,11 +5,60 @@
     gap: 20px;
     font-size: 40px;
     color: white;
-
+   perspective: 800px;/* definimos ubicacion del plano para que pueda con eso generar el efecto de la 3er dimencion*/
+    perspective-origin: bottom;/* center- top -bottom : desde que angulo estoy observando al elemento*/
 }
 .cubo{
     background-color: brown;
     width: 200px;
     height: 200px;
     border: 2px solid black;
+}
+
+.uno:hover{
+    background-color: darkmagenta;
+    border: 5px dotted blue;
+    transform: translateX(200px) translateZ(100px);
+    /* translateX(x) translateZ(z) translateY(y) translate(x,y,z) */
+    /* transition: transform 5s, border 3s;  puedo hacer una transicion de varias propiedades utilizando la coma */
+    transition: all 5s;
+    
+}
+.dos{
+    transition: color 4s;/*la transision ocurre tanto cuando pulso como cuando dejo de pulsar*/
+    transform: rotateX(45deg);
+    /* rotate -> grados : deg(degree) 
+    + : gira hacia la derecha(horario)  - : gira hacia la izquierda (antihorario)
+    */
+}
+.dos:active{
+    color: black;
+    transform: rotateY(20deg);
+    transition: transform 2s;
+}
+.tres{
+    transform: scaleX(2) ;
+}
+.cuatro{
+    transform: skew(45deg,20deg);
+    /* unidad -> deg */
+}
+
+/* pseudoclases -> agregados a los selectores que nos permite modificar sus propiedades ante ciertas situaciones del usuario.
+*/
+/* cambios sean de manera progresiva -> transition 
+ transition-duration -> cuanto tiempo tarda de un estado inicial a uno final
+ tiempo -> s(segundos) ms(milisegundos)
+    transition-property -> la o las propiedades que quiero que se modifiquen de manera progresiva
+
+    si uso transition en una pseudoclase, solo lo hace progresivo cuando ocurre esa accion ( hover- active) , cuando se deja de realizar esa accion , el elemento vuelve a su estado inicial de manera abrupta
+    Si quiero que la parte progresiva sea en ambos sentidos, debo que colocar transition en el selector
+*/
+h1{
+    transition: transform 5s;
+
+}
+
+.girar{
+    transform: rotateY(180deg);
 }
