@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase -5 </title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body onscroll="mostrar()">
+    <nav>
+        <ul>
+            <li>item</li>
+            <li>item</li>
+        </ul>
+    </nav>
+
+    <h1>SVG</h1>
+
+    <section>
+        <svg>
+            <rect x="50" y="-50" width="150" height="200" fill="rgba(200,50,44,0.9)" stroke="blue" stroke-width="4" rx="5%"></rect>     
+            <rect x="100" y="70" width="50" height="50" stroke="green" stroke-width="4" fill="transparent"></rect>
+       
+            
+            <circle class="circulo" cx="300" cy="200" r="160" fill="#F90"></circle>
+            <ellipse cx="300" cy="200" rx="40" ry="140"></ellipse>
+
+            <line x1="400" y1="50" x2="400" y2="200" stroke="black" stroke-width="8"></line>
+            <line x1="570" y1="50" x2="500" y2="200" stroke="black" stroke-width="8"></line>
+
+            <polyline points="30 500 ,100 400,330 330 ,150 300 "stroke-width="3" stroke="#004499" fill="none"></polyline>
+
+            <polygon stroke="green" stroke-width="4" points="400 480,300 400,300 440 , 500 50" fill="none"></polygon>
+            
+        </svg>
+    </section>
+    <section>
+        <svg id="svg2">
+            <circle  cx="200" cy="200" r="50" fill="pink"></circle>
+            <circle cx="280" cy="200" r="50" fill="pink"></circle>
+            <polyline points="235 330,327 219,155 221" fill="pink"></polyline>
+        </svg>
+    </section>
+
+    <img id="globo" src="./images/globos.jpg" alt="globo..">
+    <img src="./images/ballons.png" alt="">
+    <img id="cafe" src="./images/coffe.jpg" alt="cafe..">
+    <img src="./images/heart.svg" alt="">
+    <script src="./script.js"></script>
+</body>
+</html>
+<!-- svg -> figuras primitivas : figuras geometricas : rectangulos-circulos-elipse -lineas 
+ etiquetas de apertura y cierre
+orden importa 
+no podemos utilizar z-index ( la que nos permite superponer- indicar el orden en que se superponen los elementos) 
+atributos :
+x - y -> coordenadas vertice superior izquierdo
+
+fill -> color de relleno
+stroke -> color del contorno
+stroke-width -> ancho del borde
+
+rect:
+rx -> redondeo de bordes (sin unidad o %)
+
+circle:
+cy -cx -> coordenada del centro de la circunferencia
+r -> radio
+
+allipse:
+cy -cx -> coordenada del centro de la circunferencia
+rx -ry -> radio horizintal y vertical
+
+line:
+x1-y1|x2-y2 -> puntos para armar la linea
+
+polyline y polygon :
+points -> pares de coordenadas separadas por una coma (x y)
+la diferencia esta en que el polygon cierra la figura 
+-->

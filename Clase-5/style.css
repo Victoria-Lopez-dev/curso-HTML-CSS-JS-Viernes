@@ -1,0 +1,39 @@
+nav{
+    position: sticky;
+    top: 0;
+    transition: background-color 3s;
+}
+
+.fondo{
+    background-color: red;
+}
+#globo{
+    width: 300px;
+}
+#cafe{
+    width: 300%;
+}
+
+/*----------------*/
+
+svg{
+    border: 2px solid black;
+    width: 600px;
+    height: 500px;
+}
+#svg2{
+    border: none;
+    animation: latir 5s infinite alternate;
+}
+.circulo:hover{
+    fill:red
+}
+
+@keyframes latir {
+    from{
+        transform: scale(0.5);
+    }
+    to{
+        transform: scale(1);
+    }
+}
