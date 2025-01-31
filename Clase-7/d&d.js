@@ -30,7 +30,7 @@ document.querySelector("h1").addEventListener("dragend",(event)=>{
     console.log(info)  
     let zonaDestino=document.querySelector(".zona-destino")
     // zonaDestino.innerHTML=`<h1>${info}</h1>`
-    zonaDestino.innerHTML=`<h1>INFO TRASLADADA</h1>`
+    zonaDestino.innerHTML=`<h1>${info}</h1>`
 })
 
 //drag -> evento que se ejecuta siempre que se este arrastrando un elemento 
